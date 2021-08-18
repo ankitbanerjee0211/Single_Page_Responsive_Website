@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zippy - Everything U Need</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="20x20">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <h1>ZIPPY</h1>
+        <ul>
+            <li>HOME</li>
+            <li>PROJECTS</li>
+            <li>PRICING</li>
+            <li>TEAM</li>
+            <li>BLOG</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+
+    <!-- CAROUSEL using VanillaJS-->
+    <div class="carousel">
+        <button id="carousel_button_left" class="carousel_button"><i class="fa fa-chevron-left"></i></button>
+        <div class="carousel_track_container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current_slide">
+                    <img src="img/carousel/image-1.jpg" alt="img-1">
+                </li>
+                <li class="carousel_slide">
+                    <img src="img/carousel/image-5.jpg" alt="img-2">
+                </li>
+                <li class="carousel_slide">
+                    <img src="img/carousel/image-3.jpg" alt="img-3">    
+                </li>
+                <li class="carousel_slide">
+                    <img src="img/carousel/image-4.jpg" alt="img-4">    
+                </li>
+            </ul>
+        </div>
+        <button id="carousel_button_right" class="carousel_button"><i class="fa fa-chevron-right"></i></button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current_slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>One page promising to fill all your needs!</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut excepturi nemo recusandae repellendus nihil culpa, laudantium officiis in hic consequatur.</h3>
+
+        <div class="header_buttons">
+            <button id="header_button_1">LEARN MORE</button>
+            <button id="header_button_2">LEARN MORE</button>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/ec565e4b64.js" crossorigin="anonymous"></script>
+<script src="js/carousel.js"></script>
+</html>

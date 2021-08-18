@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    position: absolute;
+    height: 15vh;
+    width: 100vw;
+    z-index: 500;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+nav h1{
+    padding-left: 12%;
+    font-size: 5vmin;
+    text-shadow: 2px 2px 5px rgb(11, 48, 255), -2px -2px 5px rgb(255, 153, 0), 2px -2px 5px rgb(86, 177, 51), -2px 2px 5px rgb(86, 177, 51);
+    width: 29%;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 71%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+nav li{
+    list-style: none;
+    font-size: 2.9vmin;
+    cursor: pointer;
+    margin: 1.10vw 2.25vw;
+}
+nav li:hover{
+    color: rgb(255, 255, 111);
+    text-shadow: 0 0 5px whitesmoke;
+}
+
+/* HEADER */
+.header{
+    position: absolute;
+    top: 25vh;
+    color: beige;
+    width: 50vw;
+    left: 25vw;
+    text-shadow: 0 0 5px black;
+}
+.header h1{
+    font-size: 5.5vmin;
+    margin-bottom: 3vh;
+}
+.header h3{
+    font-size: 2.8vmin;
+    margin-bottom: 3vh;
+}
+
+.header_buttons button{
+    padding: 1.5vmin;
+    font-weight: bold;
+    outline: none;
+    border-radius: .7vmin;
+    cursor: pointer;
+}
+
+#header_button_1{
+    background-color: rgb(255, 239, 94);
+}
+#header_button_2{
+    background-color: rgb(165, 11, 165);
+    color: white;
+}
+
+#header_button_1:hover{
+    background-color: rgb(117, 189, 24);
+    color: white;      
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 6px whitesmoke;
+}
+#header_button_2:hover{
+    background-color: rgb(117, 189, 24);
+    color: white;       
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 6px whitesmoke;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        width: 80vw;
+        left: 10vw;
+        top: 18vh;
+    }
+}
