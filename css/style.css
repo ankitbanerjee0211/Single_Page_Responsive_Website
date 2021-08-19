@@ -117,7 +117,7 @@ nav a:hover{
     .header{
         width: 80vw;
         left: 10vw;
-        top: 17vh;
+        top: 20vh;
     }
     .header_buttons button{
         padding: 1.25vmin;
@@ -126,10 +126,11 @@ nav a:hover{
         font-size: 2vmin;
     }
     .header h1{
-        font-size: 5vmin;
+        font-size: 5.5vmin;
         margin-bottom: 3vh;
     }
     .header h3{
+        font-size: 3.2vmin;
         margin-bottom: 2vh;
     }
 }
@@ -229,15 +230,31 @@ nav a:hover{
     #home{
         width: 92%;
     }
+    #home h1{
+        font-size: 5.5vmin;
+    }
+    #home section h2{
+        font-size: 4vmin;
+    }
+    .home_tab i{
+        width: 18vmin;
+        height: 18vmin;
+        font-size: 7vmin;
+    }
+    .home_tab h4{
+        margin: 2.5vh 0;
+        font-size: 4vmin;
+    }
+
     .home_tab p{
         text-align: center;
         margin: 0 1vh;
         line-height: 3vh;
     }
     .home_tab{
-        width: 50%;
+        width: 95%;
     }
     .home_btn{
-        font-size: 2.5vmin;
+        font-size: 2.8vmin;
     }
 }    
