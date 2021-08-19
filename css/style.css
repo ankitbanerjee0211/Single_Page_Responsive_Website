@@ -85,42 +85,34 @@ nav a:hover{
 }
 
 .header_buttons button{
-    padding: 1.5vmin;
+    padding: 1.75vmin 2.25vmin;
     font-weight: bold;
     outline: none;
     border-radius: .7vmin;
     cursor: pointer;
+    font-size: 2vmin;
+    border: none;
 }
 
 #header_button_1{
     background-color: rgb(255, 239, 94);
 }
-#header_button_2{
-    background-color: rgb(165, 11, 165);
-    color: white;
-}
+
 
 #header_button_1:hover{
-    background-color: rgb(117, 189, 24);
+    background-color: rgb(165, 11, 165);
     color: white;      
-    text-shadow: 0 0 5px black;
-    box-shadow: 0 0 6px whitesmoke;
 }
-#header_button_2:hover{
-    background-color: rgb(117, 189, 24);
-    color: white;       
-    text-shadow: 0 0 5px black;
-    box-shadow: 0 0 6px whitesmoke;
-}
+
 
 @media only screen and (max-width: 600px){
     .header{
         width: 80vw;
         left: 10vw;
-        top: 20vh;
+        top: 19vh;
     }
     .header_buttons button{
-        padding: 1.25vmin;
+        padding: 1.75vmin 2.25vmin;
     }
     .header_buttons button{
         font-size: 2vmin;
@@ -164,7 +156,7 @@ nav a:hover{
 #home section i{
     text-align: center;
     width: 40%;
-    font-size: 17vmin;
+    font-size: 18vmin;
     color: grey;
 }
 
@@ -172,7 +164,6 @@ nav a:hover{
     display: flex;
     width: 90%;
     flex-direction: row;
-    /* border: 2px solid green; */
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -215,7 +206,7 @@ nav a:hover{
     font-weight: bold;
     background-color: rgb(255, 239, 94);
     outline: none;
-    border: 0.5px solid grey;
+    border: none;
     cursor: pointer;
     border-radius: .75vmin;
     font-size: 2vmin;
@@ -234,7 +225,7 @@ nav a:hover{
         font-size: 5.5vmin;
     }
     #home section h2{
-        font-size: 4vmin;
+        font-size: 4.5vmin;
     }
     .home_tab i{
         width: 18vmin;
