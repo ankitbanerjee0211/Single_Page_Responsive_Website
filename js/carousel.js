@@ -11,7 +11,7 @@ const slideWidth = slideSize.width;
 
 // Arranging the slides next to each other
 const setSlidePosition = (slide, index) => {
-    slide.style.left = index*slideWidth + 'px';
+    slide.style.left = index*100 + '%';
 };
 slides.forEach(setSlidePosition);
 
@@ -89,4 +89,4 @@ setInterval(() => {
         nextDot = dots[0];
     }
     moveToSlide(track, currentSlide, nextSlide, currentDot, nextDot);
-}, 9000);
+}, 9500);

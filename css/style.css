@@ -5,11 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVBAR */
 nav{
     position: absolute;
+    /* will make it fixed for windows viewers and decrease the thickness*/
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     z-index: 500;
     display: flex;
     font-weight: bold;
@@ -19,29 +24,47 @@ nav{
 }
 
 nav h1{
-    padding-left: 12%;
+    padding-left: 10vw;
     font-size: 5vmin;
     text-shadow: 2px 2px 5px rgb(11, 48, 255), -2px -2px 5px rgb(255, 153, 0), 2px -2px 5px rgb(86, 177, 51), -2px 2px 5px rgb(86, 177, 51);
     width: 29%;
+    text-align: center;
 }
 nav ul{
     display: flex;
     flex-wrap: wrap;
     width: 71%;
-    padding-right: 10%;
+    padding-right: 7vw;
     align-items: center;
     justify-content: center;
 }
 nav li{
     list-style: none;
-    font-size: 2.9vmin;
+    font-size: 3vmin;
     cursor: pointer;
     margin: 1.10vw 2.25vw;
 }
-nav li:hover{
-    color: rgb(255, 255, 111);
-    text-shadow: 0 0 5px whitesmoke;
+
+nav a{
+    text-decoration: none;
+    color: white;
 }
+nav a:hover{
+    color: rgb(255, 255, 111);
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        height: 12vh;
+    }
+    nav ul{
+        padding-right: 3vw;
+    }
+    nav h1{
+        padding-left: 5vw;
+    }
+}
+
 
 /* HEADER */
 .header{
@@ -94,6 +117,127 @@ nav li:hover{
     .header{
         width: 80vw;
         left: 10vw;
-        top: 18vh;
+        top: 17vh;
+    }
+    .header_buttons button{
+        padding: 1.25vmin;
+    }
+    .header_buttons button{
+        font-size: 2vmin;
+    }
+    .header h1{
+        font-size: 5vmin;
+        margin-bottom: 3vh;
+    }
+    .header h3{
+        margin-bottom: 2vh;
     }
 }
+
+/* Welcome Section or home section */
+#home{
+    width: 60%;
+    margin: 7vh auto;
+    border-bottom: 3px solid rgb(209, 209, 209);
+    padding-bottom: 3vh;
+}
+#home h1{
+    font-size: 5vmin;
+    text-align: center;
+    padding: 1vh 0;
+}
+#home section{
+    display: flex;
+    align-items: center;
+    padding: 5vh 0 3.5vh 0;
+    width: 100%;
+}
+#home section h2{
+    width: 60%;
+    font-weight: normal;
+    font-size: 3.5vmin;
+    margin: 0 4.5vw;
+    height: 100%;
+    color: rgb(92, 92, 92);
+}
+#home section i{
+    text-align: center;
+    width: 40%;
+    font-size: 17vmin;
+    color: grey;
+}
+
+.home_tabs_container{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    /* border: 2px solid green; */
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.home_tab{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3vh 0;
+}
+.home_tab i{
+    width: 12vmin;
+    text-align: center;
+    height: 12vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(165, 11, 165);
+    color: white;
+    border-radius: 50%;
+    font-size: 4.75vmin;
+}
+.home_tab h4{
+    margin: 3vh 0;
+    font-size: 2.8vmin;
+}
+.home_tab p{
+    text-align: center;
+    margin: 0 4vh;
+    line-height: 3.5vh;
+    color: rgb(85, 85, 85);
+}
+.home_btn{
+    margin: 3vh;
+    color: black;
+    padding: 2vmin 3vmin;
+    font-weight: bold;
+    background-color: rgb(255, 239, 94);
+    outline: none;
+    border: 0.5px solid grey;
+    cursor: pointer;
+    border-radius: .75vmin;
+    font-size: 2vmin;
+}
+.home_btn:hover{
+    color: whitesmoke;
+    background-color: rgb(165, 11, 165);
+}
+
+
+@media only screen and (max-width: 600px){
+    #home{
+        width: 92%;
+    }
+    .home_tab p{
+        text-align: center;
+        margin: 0 1vh;
+        line-height: 3vh;
+    }
+    .home_tab{
+        width: 50%;
+    }
+    .home_btn{
+        font-size: 2.5vmin;
+    }
+}    

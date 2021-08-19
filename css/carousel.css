@@ -91,9 +91,12 @@
 
 @media only screen and (max-width: 600px){
     .carousel{
-        height: 58vh;
+        height: 54vh;
     }
     .carousel_button{
         width: 10%;
+    }
+    .carousel_nav{
+        left: 10.25%;
     }
 }
