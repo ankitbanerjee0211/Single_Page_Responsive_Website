@@ -1,0 +1,45 @@
+#zippy_life{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bg-color-1);
+    padding: 5vh 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#zippy_life h1{
+    font-size: 5vmin;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+.gallery{
+    margin: 2vh 0 1vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.gallery img{
+    width: 200px;
+    margin: 1vh;
+    object-fit: cover;
+    height: 140px;
+    border: .5px solid var(--bg-color-2);
+    transition: 550ms;
+}
+.gallery img:hover{
+    transform: scale(1.15);
+    z-index: 5;
+}
+
+@media screen and (max-width:900px){
+    .gallery{
+        width: 95%;
+    }
+    .gallery img{
+        filter: grayscale(0%);
+    }
+}

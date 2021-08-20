@@ -15,10 +15,10 @@
 }
 
 .project_odd{
-    background-color: rgb(231, 231, 231);
+    background-color: var(--bg-color-1);
 }
 .project_even{
-    background-color: rgb(204, 204, 204);
+    background-color: var(--bg-color-2);
 }
 
 .project_description{
@@ -27,7 +27,7 @@
 
 #projects_header h1{
     font-size: 5.5vmin;
-    padding: 2vh 0 5vh 0;
+    padding: 3vh 0 1vh 0;
     text-align: center;
 }
 .project img{
@@ -46,7 +46,7 @@
 }
 .project:hover{
     opacity: 1;
-    background-color: rgb(255, 239, 94);
+    background-color: var(--primary-color);
 }
 
 .project_btn{
@@ -59,7 +59,7 @@
     cursor: pointer;
 }
 .project_btn:hover{
-    background-color: rgb(165, 11, 165);
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -87,6 +87,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 4vh;
 }
 
 .pricing_div{
@@ -111,10 +112,13 @@
     text-align: center;
     padding-bottom: 1.5vh;
 }
+#pricing h5{
+    font-weight: normal;
+}
 
 .pricing_div_mid{
-    border-left: 3.5px solid rgb(167, 167, 167);
-    border-right: 3.5px solid rgb(167, 167, 167);
+    border-left: 3.5px solid var(--bg-color-1);
+    border-right: 3.5px solid var(--bg-color-1);
 }
 .grey{
     color: grey;
@@ -124,14 +128,28 @@
     margin: 2vh 0 0 0;
     outline: none;
     border: none;
-    padding: 1.1vh 3.5vw;
+    padding: 1.3vh 3.5vw;
     font-weight: bold;
-    background-color: rgb(255, 239, 94);
+    background-color: var(--primary-color);
     border-radius: .5vmin;
 }
 .pricing_btn:hover{
     color: white;
-    background-color: rgb(165, 11, 165);
+    background-color: var(--secondary-color);
+}
+
+/* Video Projects */
+#vid_projects{
+    padding: 5vh 0;
+    width: 100%;
+    height: 400px;
+    background-color: var(--secondary-color);
+}
+#vid_projects h1{
+    font-size: 5vmin;
+    text-align: center;
+    padding: 2vh 0;
+    color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px){
