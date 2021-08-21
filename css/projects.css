@@ -70,7 +70,7 @@
         min-width: 50%; 
     }
     .project img{
-        height: 320px;
+        height: 290px;
     }
     .project_description{
         padding: 2.5vh;
@@ -159,7 +159,7 @@
     color: whitesmoke;
 }
 .vid_projects_container{
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -167,11 +167,11 @@
     justify-content: center;
 }
 .vid_project{
-    width: 400px;
+    width: 450px;
     padding: 1.5vmin;
     outline: none;
     border: none;
-    height: 300px;
+    height: 280px;
 }
 
 @media only screen and (max-width: 600px){
@@ -183,5 +183,10 @@
     }
     .pricing_btn{
         padding: 1.1vh 5vw;
+    }
+    .vid_project{
+        width: 450px;
+        padding: 1.75vmin;
+        height: 260px;
     }
 }
