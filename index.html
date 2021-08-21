@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zippy - Everything U Need</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/lifeInZippy.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="20x20">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
 </head>
+
 <body>
     <!-- NAVBAR -->
     <nav>
@@ -24,8 +32,8 @@
             <li><a href="#projects_header"> PROJECTS</a></li>
             <li><a href="#pricing"> PRICING</a></li>
             <li><a href="#team"> TEAM</a></li>
-            <li><a href="#"> BLOG</a></li>
-            <li><a href="#"> CONTACT</a></li>
+            <li><a href="#blogs"> BLOGS</a></li>
+            <li><a href="#mapNcontact"> CONTACT</a></li>
         </ul>
     </nav>
 
@@ -41,10 +49,10 @@
                     <img src="images/carousel/image-5.jpg" alt="images-2">
                 </li>
                 <li class="carousel_slide">
-                    <img src="images/carousel/image-3.jpg" alt="images-3">    
+                    <img src="images/carousel/image-3.jpg" alt="images-3">
                 </li>
                 <li class="carousel_slide">
-                    <img src="images/carousel/image-4.jpg" alt="images-4">    
+                    <img src="images/carousel/image-4.jpg" alt="images-4">
                 </li>
             </ul>
         </div>
@@ -60,7 +68,8 @@
 
     <div class="header">
         <h1>One page promising to fill all your needs!</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut excepturi nemo recusandae repellendus nihil culpa, laudantium officiis in hic consequatur.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut excepturi nemo recusandae repellendus nihil
+            culpa, laudantium officiis in hic consequatur.</h3>
 
         <div class="header_buttons">
             <button id="header_button_1">LEARN MORE</button>
@@ -71,26 +80,30 @@
     <div id="home">
         <h1>Welcome to Zippy</h1>
         <section class="overview">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem provident enim odio aliquid error esse ipsum facere fugit incidunt voluptatum?</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem provident enim odio aliquid error esse
+                ipsum facere fugit incidunt voluptatum?</h2>
             <i class="fa fa-umbrella"></i>
         </section>
         <div class="home_tabs_container">
             <div class="home_tab">
                 <i class="fa fa-bell-o"></i>
                 <h4>LOREM IPSUM</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta provident autem earum suscipit hic repudiandae, vitae ab enim quisquam velit?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta provident autem earum suscipit hic
+                    repudiandae, vitae ab enim quisquam velit?</p>
                 <button class="home_btn">LEARN MORE</button>
             </div>
             <div class="home_tab">
                 <i class="fa fa-envelope-o"></i>
                 <h4>DOLOR SIT</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta provident autem earum suscipit hic repudiandae, vitae ab enim quisquam velit?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta provident autem earum suscipit hic
+                    repudiandae, vitae ab enim quisquam velit?</p>
                 <button class="home_btn">LEARN MORE</button>
             </div>
             <div class="home_tab">
                 <i class="fa fa-phone"></i>
                 <h4>CONSECTETURE</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta provident autem earum suscipit hic repudiandae, vitae ab enim quisquam velit?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta provident autem earum suscipit hic
+                    repudiandae, vitae ab enim quisquam velit?</p>
                 <button class="home_btn">LEARN MORE</button>
             </div>
         </div>
@@ -105,7 +118,8 @@
             <img src="images/projects/project-1.jpg" alt="project-1">
             <div class="project_description">
                 <h3>PROJECT NAME</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam dolor?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam
+                    dolor?</p>
                 <button class="project_btn">LAUNCH CASE STORY</button>
             </div>
         </div>
@@ -113,7 +127,8 @@
             <img src="images/projects/project-2.jpg" alt="project-2">
             <div class="project_description">
                 <h3>PROJECT NAME</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam dolor?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam
+                    dolor?</p>
                 <button class="project_btn">LAUNCH CASE STORY</button>
             </div>
         </div>
@@ -121,7 +136,8 @@
             <img src="images/projects/project-3.jpg" alt="project-3">
             <div class="project_description">
                 <h3>PROJECT NAME</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam dolor?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam
+                    dolor?</p>
                 <button class="project_btn">LAUNCH CASE STORY</button>
             </div>
         </div>
@@ -129,7 +145,8 @@
             <img src="images/projects/project-4.jpg" alt="project-4">
             <div class="project_description">
                 <h3>PROJECT NAME</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam dolor?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum, eius architecto culpa numquam
+                    dolor?</p>
                 <button class="project_btn">LAUNCH CASE STORY</button>
             </div>
         </div>
@@ -182,6 +199,90 @@
         <h1>Zippy Team</h1>
         <div class="members_container">
             <!-- Team member cards will be here -->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/team/member1.jpg">
+                </div>
+                <div class="contentBx">
+                    <h2>SARA JOHNSON</h2>
+                    <h3>Creative Head</h3>
+                    <div class="social">
+                        <span><i class="fa fa-facebook"></i></span>
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-google-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/team/member2.jpg">
+                </div>
+                <div class="contentBx">
+                    <h2>MATT ALEX</h2>
+                    <h3>Art Director</h3>
+                    <div class="social">
+                        <span><i class="fa fa-facebook"></i></span>
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-google-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/team/member3.jpg">
+                </div>
+                <div class="contentBx">
+                    <h2>CHRIS PHILIPS</h2>
+                    <h3>Senior Designer</h3>
+                    <div class="social">
+                        <span><i class="fa fa-facebook"></i></span>
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-google-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/team/member5.jpg">
+                </div>
+                <div class="contentBx">
+                    <h2>JIMMY SMITH</h2>
+                    <h3>Marketing Manager</h3>
+                    <div class="social">
+                        <span><i class="fa fa-facebook"></i></span>
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-google-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/team/member4.jpg">
+                </div>
+                <div class="contentBx">
+                    <h2>ALIZA</h2>
+                    <h3>SEO Monster</h3>
+                    <div class="social">
+                        <span><i class="fa fa-facebook"></i></span>
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-google-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/team/member6.jpg">
+                </div>
+                <div class="contentBx">
+                    <h2>CELEIN JOHN</h2>
+                    <h3>Senior Designer</h3>
+                    <div class="social">
+                        <span><i class="fa fa-facebook"></i></span>
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span><i class="fa fa-google-plus"></i></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -222,10 +323,108 @@
         </div>
     </div>
 
+    <!-- Newsletter -->
+    <div id="newsletter">
+        <h1>Newsletter Signup</h1>
+        <div class="newsletter_container">
+            <form action="">
+                <input type="email" name="email" id="newsletter_email">
+                <button type="submit" class="newsletter_btn" value="submit">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div id="blogs">
+        <h1>Blogs</h1>
+        <div class="blogs_container">
+            <div class="blog">
+                <img src="images/office/office8.png" alt="">
+                <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+                <h4 class="grey">2 Sept, 2021</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum! Obcaecati, consectetur a
+                    assumenda accusantium temporibus ullam quos magnam non.</p>
+                <button class="blog_btn">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="images/office/office6.png" alt="">
+                <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+                <h4 class="grey">2 Sept, 2021</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum! Obcaecati, consectetur a
+                    assumenda accusantium temporibus ullam quos magnam non.</p>
+                <button class="blog_btn">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="images/office/office1.png" alt="">
+                <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+                <h4 class="grey">2 Sept, 2021</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum! Obcaecati, consectetur a
+                    assumenda accusantium temporibus ullam quos magnam non.</p>
+                <button class="blog_btn">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map & Contact Us -->
+    <div id="mapNcontact">
+        <div id="map"></div>
+        <form id="contact_us" action="">
+            <label for="name">NAME</label><input type="text" name="name" id="name">
+            <label for="email">EMAIL ADDRESS</label><input type="email" name="email" id="email">
+            <label for="subject">SUBJECT</label><input type="text" name="subject" id="subject">
+            <label for="message">MESSAGE</label><textarea name="message" id="message" cols="30" rows="7"></textarea>
+            <button id="contact_submit" type="submit" value="SEND">SEND</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <div class="address footer_div">
+            <h2>OFFICE ADDRESS</h2>
+            <p>Kalyani Government Engineering College</p>
+            <p>Kalyani, Nadia, West Bengal, India, Pin-741235</p>
+        </div>
+        <div class="followUs footer_div">
+            <h2>FOLLOW US</h2>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-youtube-play"></i>
+            </div>
+        </div>
+        <div class="footer_contact footer_div">
+            <h2>CONTACT US</h2>
+            <p>Ankit Banerjee</p>
+            <p>+91 9163469972</p>
+            <a href="mailto:ankitbanerjee0211@gmail.com">ankitbanerjee0211@gmail.com</a>
+            <a href="https://www.linkedin.com/in/ankit-banerjee-0211/">LinkedIn</a>
+        </div>
+    </footer>
+
 </body>
+<!-- Mapbox -->
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW5raXRiYW5lcmplZTAyMTEiLCJhIjoiY2tzbGdhdDhtMTR5bjMxbDRpc282eDQ3ciJ9.rRPI_eQROv6ljfy0gnLGQg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [88.44874408465353, 22.99178506243484],
+        zoom: 9
+    });
+    const marker1 = new mapboxgl.Marker()
+        .setLngLat([88.44874408465353, 22.99178506243484])
+        .addTo(map);
+</script>
+
 <script src="https://kit.fontawesome.com/ec565e4b64.js" crossorigin="anonymous"></script>
 <script src="js/carousel.js"></script>
 <script src="js/lightbox-plus-jquery.min.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
 </html>

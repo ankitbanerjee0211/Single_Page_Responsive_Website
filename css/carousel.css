@@ -44,15 +44,24 @@
     border: none;
     font-size: 4vmin;
     bottom: 0;
-}
-.carousel_button i{
-    opacity: .85;
-}
-.carousel_button i:hover{
-    filter: opacity(5);
+    opacity: .1;
 }
 
+#carousel_button_right{
+    right: 0;
+    background: linear-gradient(270deg, rgba(80, 80, 80, 0.5), transparent);
+}
+.carousel_button{
+    opacity: .15;
+    background: linear-gradient(90deg, rgba(80, 80, 80, 0.5), transparent);
+}
 .carousel_button:hover{
+    opacity: .75;
+    font-size: 7.5vmin;
+    transition: font-size 250ms ease-in-out;
+}
+
+/* .carousel_button:hover{
     font-size: 7.5vmin;
     opacity: 0.2;
     background: linear-gradient(90deg, rgb(219, 219, 219), transparent);
@@ -60,11 +69,8 @@
 }
 #carousel_button_right:hover{
     background: linear-gradient(270deg, rgb(219, 219, 219), transparent);
-}
+} */
 
-#carousel_button_right{
-    right: 0;
-}
 
 .carousel_nav{
     background: transparent;
