@@ -9,7 +9,6 @@
 
 .project{
     width: 25%;
-    height: 100%;
     min-width: 300px;
     opacity: .9;
 }
@@ -68,10 +67,16 @@
 
 @media only screen and (max-width: 600px){
     .project{
-        width: 100%;
+        min-width: 50%; 
     }
     .project img{
-        height: 475px;
+        height: 320px;
+    }
+    .project_description{
+        padding: 2.5vh;
+    }
+    .project_btn{
+        padding: 1.5vh 1.5vh;
     }
 }
 
@@ -145,7 +150,6 @@
 #vid_projects{
     padding: 5vh 0;
     width: 100%;
-    height: 400px;
     background-color: var(--secondary-color);
 }
 #vid_projects h1{
@@ -153,6 +157,21 @@
     text-align: center;
     padding: 2vh 0;
     color: whitesmoke;
+}
+.vid_projects_container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.vid_project{
+    width: 400px;
+    padding: 1.5vmin;
+    outline: none;
+    border: none;
+    height: 300px;
 }
 
 @media only screen and (max-width: 600px){

@@ -24,13 +24,16 @@
 #contact_us input{
     width: 100%;
     padding: 1vmin;
-    margin: .5vmin 0 1.5vmin 0;
+    margin: 1vmin 0 1.75vmin 0;
     outline: none;
     border: 0;
 }
 #contact_us label{
     font-weight: 550;
     font-size: 2vmin;
+}
+#contact_us textarea{
+    margin: 1vmin 0 1.75vmin 0;
 }
 #contact_submit{
     font-weight: 550;
@@ -52,13 +55,19 @@
 
 @media only screen and (max-width: 900px){
     #mapNcontact{
-        height: 50vw;
+        height: 60vw;
     }
     #contact_us{
         padding: 1vmin 3vmin;
     }
     #contact_us input{
         padding: .5vmin;
+    }
+    #contact_us input{
+        margin: .5vmin 0 1.5vmin 0;
+    }
+    #contact_us textarea{
+        margin: .5vmin 0 .5vmin 0;
     }
 }    
 
@@ -102,6 +111,9 @@
     font-size: 4.5vmin;
     padding: 1.5vmin;
     cursor: pointer;
+}
+.footer_div .icons i:hover{
+    color: var(--secondary-color);
 }
 .footer_div a{
     text-decoration: none;
